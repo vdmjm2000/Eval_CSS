@@ -48,13 +48,6 @@ body {
   max-width: 80%;
 }
 
-.site-title {
-  margin: 1.618rem 0 0;
-  line-height: 1;
-  font-size: 1.3rem;
-  font-weight: 400;
-  word-break: break-all;
-}
 
 .site-header > .top-nav-label {
   flex: 0 0 auto;
@@ -115,13 +108,13 @@ body {
 
 .main-navigation .menu .menu-item a:hover,
 .main-navigation .menu .menu-item a:focus {
-  background: black;
-  color: black;
+  background: lightgray;
+  color: white;
 }
 
 .main-navigation .menu .menu-item a:active {
-  background: #0b3d86;
-  color: #efefef;
+  background:gray;
+  color:white;
 }
 
 .main-navigation .sub-menu {
@@ -429,7 +422,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 1000 px) {
   .site-branding {
     flex: 1 0 30%;
     max-width: 30%;
@@ -467,21 +460,13 @@ body {
 
   .main-navigation .menu .menu-item a {
     background: #fff;
-    border: none;
-    color: red;
+    border: solid;
+    color: darkgrey;
     padding: 0.4045rem 0.809rem;
   }
 
-  .main-navigation .menu .menu-item a:hover {
-    background: red;
-    color: #1450aa;
-    text-decoration: underline;
-  }
 
-  .main-navigation .menu .menu-item a:active {
-    color: #0b3d86;
-    text-decoration: none;
-  }
+
 
   .main-navigation .menu-item-has-children > .top-nav-label {
     position: absolute;
@@ -568,6 +553,24 @@ body {
     top: 0;
     max-width: 100%;
   }
+
+  /* Mise ne place des div en dessous */
+
+.gauche{
+  float:left;
+  width:33%;
+}
+.milieu{
+  display: inline-block;
+  width:33%;
+}
+.droite{
+  float: right;
+  width:33%;
+}
+
+
+
 }
 
 @media only screen and (min-width: 64em) and (any-pointer: coarse) {
@@ -597,6 +600,8 @@ body {
   .main-navigation .sub-menu .menu-item-has-children > a::after {
     display: none;
   }
+
+  
 }
 
 @media only screen and (min-width: 100em) {
@@ -617,15 +622,16 @@ body {
   .main-navigation .sub-menu .menu-item-has-children > a::after {
     content: "\25BA";
   }
-}
+
+  }
+
+
 
 /* Mise ne place de la Card */
 
-
-
 .card {
   flex: 1;
-  width: 400px; /*1*/
+  width: 330px; /*1*/
   margin: 0px auto; /*2*/
   background-color: white; /*3*/
   box-shadow: 0px 5px 20px #999; /*4*/
