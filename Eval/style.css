@@ -25,6 +25,11 @@ body {
   
 }
 
+p {
+text-align: justify;
+
+}
+
 .site {
   font-size: 1.05rem;
   position: relative;
@@ -34,6 +39,7 @@ body {
   padding: 0 1.618rem;
 }
 
+
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -42,6 +48,7 @@ body {
   position: relative;
   margin: 0 auto 2.427rem;
 }
+
 
 .site-branding {
   flex: 1 0 80%;
@@ -416,13 +423,7 @@ body {
   display: block;
 }
 
-@media only screen and (min-width: 37.5em) {
-  .site-title {
-    font-size: 1.5rem;
-  }
-}
-
-@media only screen and (min-width: 1000 px) {
+@media only screen and (min-width: 64em) {
   .site-branding {
     flex: 1 0 30%;
     max-width: 30%;
@@ -464,6 +465,8 @@ body {
     color: darkgrey;
     padding: 0.4045rem 0.809rem;
   }
+
+  
 
 
 
@@ -554,6 +557,8 @@ body {
     max-width: 100%;
   }
 
+
+
   /* Mise ne place des div en dessous */
 
 .gauche{
@@ -562,14 +567,12 @@ body {
 }
 .milieu{
   display: inline-block;
-  width:33%;
+ width:33%;
 }
 .droite{
   float: right;
   width:33%;
 }
-
-
 
 }
 
@@ -631,7 +634,7 @@ body {
 
 .card {
   flex: 1;
-  width: 330px; /*1*/
+  width: 400px; /*1*/
   margin: 0px auto; /*2*/
   background-color: white; /*3*/
   box-shadow: 0px 5px 20px #999; /*4*/
@@ -688,3 +691,55 @@ box-sizing: border-box; /*3*/
 .card-date, .card-excerpt {
   color: #777;
 }
+
+
+
+/* Carroussel */
+
+.galerie {
+ 
+  width: 100%;
+  height: 100%;
+  max-width: 100%;  
+  margin: auto;
+  display: flex;
+  overflow-y: hidden;
+  scroll-behavior:smooth;
+  scroll-snap-type: x mandatory
+    
+  }
+  
+  .galerie img {
+    
+  align-self: center; /*pour le responsive*/
+    
+  scroll-snap-align: center
+    
+  }
+  
+  .ancre {
+    
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  
+  }
+    
+  .ancre li{
+    
+  display: inline-flex;
+  justify-content: center;
+  align-items:center;
+  width: 30px;
+  height: 30px;
+  background: #404040;
+  border-radius: 50%;
+  }
+    
+  .ancre li a{color:white}
+    
+  .ancre li:not(:last-child){
+    margin-right: 30px;
+  }
+
+/* Fin carroussel */
