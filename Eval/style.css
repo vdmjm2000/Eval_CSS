@@ -25,11 +25,30 @@ body {
   
 }
 
+
 p {
 text-align: justify;
-
 }
 
+.container {
+
+background-color:lightgray;
+font-style: italic;
+width: 90%;
+margin: auto;
+}
+
+.site-evenement1 img {
+
+  width: 50%;
+  height: 10%;
+}
+
+.site-evenement2 img {
+
+  width: 50%;
+  height: 10%;
+}
 .site {
   font-size: 1.05rem;
   position: relative;
@@ -431,6 +450,9 @@ text-align: justify;
 
   .site-title {
     font-size: 1.8rem;
+    border: solid gray; 
+    text-align: center; 
+font-family:Georgia, 'Times New Roman', Times, serif;  
   }
 
   .site-header input[type="checkbox"],
@@ -465,11 +487,6 @@ text-align: justify;
     color: darkgrey;
     padding: 0.4045rem 0.809rem;
   }
-
-  
-
-
-
 
   .main-navigation .menu-item-has-children > .top-nav-label {
     position: absolute;
@@ -557,9 +574,7 @@ text-align: justify;
     max-width: 100%;
   }
 
-
-
-  /* Mise ne place des div en dessous */
+  /* Mise ne place des div en  ligne */
 
 .gauche{
   float:left;
@@ -573,6 +588,12 @@ text-align: justify;
   float: right;
   width:33%;
 }
+
+.container {
+
+font-size: 1.3rem;
+}
+
 
 }
 
@@ -614,6 +635,7 @@ text-align: justify;
 
   .site-title {
     font-size: 2rem;
+    margin: auto;
   }
 
   .main-navigation .sub-menu ul {
@@ -637,7 +659,7 @@ text-align: justify;
   width: 400px; /*1*/
   margin: 0px auto; /*2*/
   background-color: white; /*3*/
-  box-shadow: 0px 5px 20px #999; /*4*/
+ 
 }
 .card a { /*5*/
   color: #333; 
@@ -645,7 +667,7 @@ text-align: justify;
 }
 .card:hover .card-image img { /*6*/
   width: 160%;
-  filter: grayscale(0);
+ 
 }
 
 
@@ -661,11 +683,11 @@ text-align: justify;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  filter: grayscale(1);/*6*/
     /*7 - Transition */
   transition-property: filter width; 
   transition-duration: .3s;
   transition-timing-function: ease;
+  
 }
 
 .card-body {
@@ -713,8 +735,9 @@ box-sizing: border-box; /*3*/
     
   align-self: center; /*pour le responsive*/
     
-  scroll-snap-align: center
-    
+  scroll-snap-align: center;
+
+  width: 98%;    
   }
   
   .ancre {
@@ -743,3 +766,7 @@ box-sizing: border-box; /*3*/
   }
 
 /* Fin carroussel */
+
+
+/* Page evenement*/
+
