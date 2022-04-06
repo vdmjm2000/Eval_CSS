@@ -30,12 +30,9 @@ p {
 text-align: justify;
 }
 
-.container {
+.container img {
 
-background-color:lightgray;
-font-style: italic;
-width: 90%;
-margin: auto;
+  width: 20%;
 }
 
 .site-evenement1 img {
@@ -587,11 +584,6 @@ font-family:Georgia, 'Times New Roman', Times, serif;
 .droite{
   float: right;
   width:33%;
-}
-
-.container {
-
-font-size: 1.3rem;
 }
 
 
