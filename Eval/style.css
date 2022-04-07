@@ -440,7 +440,14 @@ text-align: justify;
 }
 
 @media only screen and (min-width: 64em) {
-  .site-branding {
+
+
+#tumbnail {
+
+  width: 100%;
+}
+
+.site-branding {
     flex: 1 0 30%;
     max-width: 30%;
   }
@@ -450,6 +457,11 @@ text-align: justify;
     border: solid gray; 
     text-align: center; 
 font-family:Georgia, 'Times New Roman', Times, serif;  
+  }
+
+  #lettrine::first-letter {
+
+  width: 20%;
   }
 
   .site-header input[type="checkbox"],
@@ -640,7 +652,7 @@ font-family:Georgia, 'Times New Roman', Times, serif;
     content: "\25BA";
   }
 
-  }
+}
 
 
 
@@ -711,7 +723,8 @@ box-sizing: border-box; /*3*/
 /* Carroussel */
 
 .galerie {
- 
+
+    
   width: 100%;
   height: 100%;
   max-width: 100%;  
@@ -761,4 +774,39 @@ box-sizing: border-box; /*3*/
 
 
 /* Page evenement*/
+
+
+#tumbnail {
+  width: 60%;
+
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.agenda 
+  
+/* Dates */
+.agenda .agenda-date { width: 170px; }
+.agenda .agenda-date .dayofmonth {
+  width: 40px;
+  font-size: 36px;
+  line-height: 36px;
+  float: left;
+  text-align: right;
+  margin-right: 10px; 
+}
+.agenda .agenda-date .shortdate {
+  font-size: 0.75em; 
+}
+
+
+/* Times */
+.agenda .agenda-time { width: 140px; } 
+
+
+/* Events */
+.agenda .agenda-events {  } 
+.agenda .agenda-events .agenda-event {  } 
 
