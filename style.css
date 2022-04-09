@@ -22,18 +22,18 @@ body {
   font-size: 1rem;
   line-height: 1.618;
   margin: 0;
-  
+ 
 }
 
+h3 {
+
+ font-size: 1.3rem;
+}
 
 p {
 text-align: justify;
 }
 
-.container1 {
-
-  margin-left: 0%;
-}
 
 .site-evenement1 img {
 
