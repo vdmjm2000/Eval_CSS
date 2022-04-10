@@ -1,8 +1,4 @@
-/**
-X11 license
-* Source : https://github.com/ArmandPhilippot/dropdown-menu-css
-*/
-*,
+
 *::after,
 *::before {
   box-sizing: inherit;
@@ -25,15 +21,32 @@ body {
  
 }
 
+h1 {
+
+  font-size: 1.3rem;
+  
+  }
+
 h3 {
 
- font-size: 1.3rem;
+ font-size: 1.1rem;
 }
+
+h2 {
+
+  font-size: 1.2rem;
+  text-decoration: underline;
+ }
 
 p {
 text-align: justify;
 }
 
+h1 {
+
+font-size: 1.2rem;
+
+}
 
 .site-evenement1 img {
 
@@ -55,6 +68,12 @@ text-align: justify;
   padding: 0 1.618rem;
 }
 
+.site-title {
+  font-size: 1rem;
+  border: solid gray; 
+  text-align: center; 
+  font-family:Georgia, 'Times New Roman', Times, serif;  
+}
 
 .site-header {
   display: flex;
@@ -122,7 +141,7 @@ text-align: justify;
 .main-navigation .menu .menu-item a {
   background: #efefef;
   border: 0.0625rem solid #dcdcdc;
-  color: #1450aa;
+  color: black;
   display: block;
   padding: 0.809rem 1.618rem;
   text-decoration: none
@@ -200,7 +219,7 @@ text-align: justify;
 }
 
 .site-header > .top-nav-label .open-close-menu {
-  background: #1450aa;
+  background: gray;
   border-radius: 0.1875rem;
   height: 0.25rem;
   left: 0.1875rem;
@@ -211,7 +230,7 @@ text-align: justify;
 
 .site-header > .top-nav-label .open-close-menu::before,
 .site-header > .top-nav-label .open-close-menu::after {
-  background-color: #1450aa;
+  background-color: gray;
   height: 0.25rem;
   left: 0;
   transition-duration: 0.3s, 0.3s;
@@ -266,7 +285,7 @@ text-align: justify;
 .site-header > .top-nav-label:hover,
 .site-header > input[type="checkbox"]:focus ~ .top-nav-label,
 .site-header > input[type="checkbox"]:hover ~ .top-nav-label {
-  background: #1450aa;
+  background: gray;
 }
 
 .site-header > .top-nav-label:hover .open-close-menu,
@@ -322,17 +341,7 @@ text-align: justify;
   width: 100%;
 }
 
-.main-navigation
-  .menu-item-has-children
-  > .top-nav-label
-  .open-close-menu::after,
-.main-navigation
-  .menu-item-has-children
-  > .top-nav-label
-  .open-close-menu::before {
-  background: #1450aa;
-  transition: transform 0.25s ease-out;
-}
+
 
 .main-navigation
   .menu-item-has-children
@@ -376,39 +385,6 @@ text-align: justify;
   transform: rotate(180deg);
 }
 
-/* Plus/Minus button hover/focus/active */
-.main-navigation .menu-item-has-children > .top-nav-label:hover {
-  background: #1450aa;
-}
-
-.main-navigation
-  .menu-item-has-children
-  input[type="checkbox"]:focus
-  ~ .top-nav-label {
-  background: #1450aa;
-}
-
-.main-navigation
-  .menu-item-has-children
-  > .top-nav-label:hover
-  .open-close-menu::after,
-.main-navigation
-  .menu-item-has-children
-  > .top-nav-label:hover
-  .open-close-menu::before,
-.main-navigation
-  .menu-item-has-children
-  input[type="checkbox"]:focus
-  ~ .top-nav-label
-  .open-close-menu::before,
-.main-navigation
-  .menu-item-has-children
-  input[type="checkbox"]:focus
-  ~ .top-nav-label
-  .open-close-menu::after {
-  background: #efefef;
-}
-
 /* Hide and place checkbox over the toggle buttons */
 .site-header input[type="checkbox"] {
   cursor: pointer;
@@ -441,11 +417,18 @@ text-align: justify;
 
 @media only screen and (min-width: 64em) {
 
+  h1 {
 
-img {
+    font-size: 1.7rem;
+   }
 
-  width: 40%;
-}
+
+  .carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+  color: #333;
+  }
 
 .site-branding {
     flex: 1 0 30%;
@@ -456,7 +439,7 @@ img {
     font-size: 1.8rem;
     border: solid gray; 
     text-align: center; 
-font-family:Georgia, 'Times New Roman', Times, serif;  
+    font-family:Georgia, 'Times New Roman', Times, serif;  
   }
 
   #lettrine::first-letter {
